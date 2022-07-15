@@ -183,9 +183,18 @@ public class FilteredWorldsInventory extends PaginatedInventory implements Liste
                     XSound.ENTITY_CHICKEN_EGG.play(player);
                     openInventory(player);
                     return;
-                case 49:
+                case 47:
                     XSound.ENTITY_CHICKEN_EGG.play(player);
                     plugin.getCreateInventory().openInventory(player, CreateInventory.Page.PREDEFINED, visibility);
+                    return;
+                case 49:
+                    if (this.inventoryName.matches("private_title")) {
+                        XSound.ENTITY_CHICKEN_EGG.play(player);
+                        plugin.getCreateInventory().openInventory(player, CreateInventory.Page.PREDEFINED, visibility);
+                        return;
+                    }
+                    XSound.ENTITY_CHICKEN_EGG.play(player);
+                    plugin.getFolderInventory().getFolderName(player);
                     return;
                 case 53:
                     incrementInv(player);

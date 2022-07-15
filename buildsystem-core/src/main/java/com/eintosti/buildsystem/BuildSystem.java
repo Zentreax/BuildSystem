@@ -87,6 +87,7 @@ public class BuildSystem extends JavaPlugin {
     private SpeedInventory speedInventory;
     private StatusInventory statusInventory;
     private WorldsInventory worldsInventory;
+    private FolderInventory folderInventory;
 
     private Messages messages;
     private ConfigValues configValues;
@@ -201,6 +202,7 @@ public class BuildSystem extends JavaPlugin {
         this.speedInventory = new SpeedInventory(this);
         this.statusInventory = new StatusInventory(this);
         this.worldsInventory = new WorldsInventory(this);
+        this.folderInventory = new FolderInventory(this);
 
         this.skullCache = new SkullCache(version);
     }
@@ -541,6 +543,10 @@ public class BuildSystem extends JavaPlugin {
 
     public WorldsInventory getWorldsInventory() {
         return worldsInventory;
+    }
+
+    public FolderInventory getFolderInventory() {
+        return folderInventory;
     }
 
     public ConfigValues getConfigValues() {

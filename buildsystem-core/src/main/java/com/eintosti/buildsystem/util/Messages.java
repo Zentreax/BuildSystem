@@ -439,6 +439,12 @@ public class Messages {
         setMessage(sb, config, "private_no_worlds", "&c&nNo worlds available");
         setMessage(sb, config, "private_create_world", "&bCreate a private world");
         addLine(sb, "");
+        setMessage(sb, config, "folder_title", "&3» &8hurensohn");
+        setMessage(sb, config, "enter_folder_name", "&c&nhurensohn");
+        setMessage(sb, config, "folder_creation_invalid_characters", "&bhurensohn");
+        setMessage(sb, config, "folder_creation_name_blank", "&bhurensohn");
+        setMessage(sb, config, "world_navigator_create_folder", "&bhurensohn");
+        addLine(sb, "");
         addLine(sb, "# Setup");
         setMessage(sb, config, "setup_title", "&3» &8Setup");
         setMessage(sb, config, "setup_create_item_name", "&bCreate World Item");
